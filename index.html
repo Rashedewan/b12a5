@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-----Nav bar area --->
-    <div class=" w-[1470px] mx-auto flex justify-between items-center mt-1">
+    <div class=" w-full md:w-[1470px] mx-auto flex justify-between items-center mt-1">
         <div class="flex justify-between items-center">
             <img src="./assets/logo.png" class=" w-[50px] h-[50px]">
             <h1 class="ml-2 text-[#006747] text-xl font-bold">Emergency <br>Service</h1>
@@ -26,7 +26,7 @@
     </div>
 
     <!-------Hero Section -------->
-    <div class="w-full mt-5 h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+    <div class="w-full mt-5 h-auto md:h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
         <div class="text-center p-4">
             <img src="./assets/logo-dark.png" class="w-[92px] h-[92px] mx-auto">
             <h1 class="text-white font-bold text-[40px] mt-2">Emergency Service Directory</h1>
@@ -35,7 +35,7 @@
     </div>
 
     <!-----main section----->
-    <div class="mt-4 grid grid-cols-4 grid-rows-2 gap-3 p-3">
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-4 grid-rows-2  gap-3 p-3">
         <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg  p-5">
             <div class="flex justify-between items-center">
                 <img src="./assets/emergency.png" class="border border-transparent w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
@@ -56,7 +56,7 @@
         </div>
         <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg  p-5">
             <div class="flex justify-between items-center">
-                <img src="./assets/police.png" class="border border-transparent w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
+                <img src="./assets/police.png" class="border border-transparent w-[60px] h-[60px] bg-[#DFEFFF] rounded-[16px] w-[32px] h-[32px] p-3">
                 <i class="fa-regular fa-heart text-2xl heartBeat"></i>
             </div>
             <div class="mt-2">
@@ -95,7 +95,7 @@
   <div class="border-1 border-transparent border-gray-500 rounded-xl shadow-lg p-4 row-span-2">
     <div class="flex justify-between items-center">
         <h1 class="font-bold text-xl"><i class="fa-regular fa-clock mr-2"></i>Call history</h1>
-        <button class="btn rounded-full text-white bg-[#00A63E]" id="clearHistory">Clear</button>
+        <button class="btn rounded-full text-white bg-[#00A63E]" id>Clear</button>
 </div>
 
     
@@ -170,7 +170,7 @@
             </div>
         </div>
          
-    </div>
+    </div> 
     <script src="./scripts/script.js"></script>
 </body>
 </html>
