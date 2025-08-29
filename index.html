@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+/>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-----Nav bar area --->
+    <div class=" w-[1470px] mx-auto flex justify-between items-center mt-1">
+        <div class="flex justify-between items-center">
+            <img src="./assets/logo.png" class=" w-[50px] h-[50px]">
+            <h1 class="ml-2 text-[#006747] text-xl font-bold">Emergency <br>Service</h1>
+        </div>
+        <div class="flex gap-10 m-2">
+            <button class="btn rounded-full border-white "><span id="heartCount">0</span> <img src="./assets/heart.png" class="w-[30px] h-[30px]"></button>
+            <button class="btn rounded-full bg-[#41ff6b1a] "><span id='coinCount'>100</span><img src="./assets/coin.png" class="w-[30px] h-[30px]"></button>
+            <button class="btn rounded-full text-white bg-[#00A63E]"><span id="copySpan">0</span> Copy</button>
+        </div>
+    </div>
+
+    <!-------Hero Section -------->
+    <div class="w-full mt-5 h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <div class="text-center p-4">
+            <img src="./assets/logo-dark.png" class="w-[92px] h-[92px] mx-auto">
+            <h1 class="text-white font-bold text-[40px] mt-2">Emergency Service Directory</h1>
+            <p class="text-white text-xl font-semibold mt-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </div>
+
+    <!-----main section----->
+    <div class="mt-4 grid grid-cols-4 grid-rows-2 gap-3 p-3">
+        <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg  p-5">
+            <div class="flex justify-between items-center">
+                <img src="./assets/emergency.png" class="border border-transparent w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
+                <i class="fa-regular fa-heart text-2xl heartBeat"></i>
+            </div>
+            <div class="mt-2">
+                <h1 class="text-xl font-bold nen" id="nen">National Emergency Number</h1>
+                <p class="text-lg text-gray-500">National Emergency</p>
+            </div>
+            <div class="mt-4">
+                <h1 class="font-bold text-2xl nenN" id="nenN">999</h1>
+                <p class="text-center border border-transparent w-[53px] h-[37px] bg-gray-100 rounded-[16px] p-1 mt-1 mb-2  text-gray-500">All</p>
+            </div>
+            <div class="flex justify-between gap-5">
+                <button onclick="myFunction('nenN','copySpan')" class="btn border-2 border-gray-200 bg-gray-50 w-[150px] text-gray-600 rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="btn bg-green-500 w-[150px] text-white rounded-xl nenBtn" id="nenBtn"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+        <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg  p-5">
+            <div class="flex justify-between items-center">
+                <img src="./assets/police.png" class="border border-transparent w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
+                <i class="fa-regular fa-heart text-2xl heartBeat"></i>
+            </div>
+            <div class="mt-2">
+                <h1 class="text-xl font-bold nen" id="phl">Police help Line</h1>
+                <p class="text-lg text-gray-500">Police</p>
+            </div>
+            <div class="mt-4">
+                <h1 class="font-bold text-3xl nenN" id="phlN">999</h1>
+                <p class="text-center border border-transparent w-[53px] h-[37px] bg-gray-100 rounded-[16px] p-1 mt-1 mb-2  text-gray-500">Police</p>
+            </div>
+            <div class="flex justify-between gap-5">
+                <button onclick="myFunction('phlN','copySpan')" class="btn border-2 border-gray-200 bg-gray-50 w-[150px] text-gray-600 rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="btn bg-green-500 w-[150px] text-white rounded-xl nenBtn" id="phlBtn"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+        <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg  p-5">
+            <div class="flex justify-between items-center">
+                <img src="./assets/fire-service.png" class="border border-transparent w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
+                <i class="fa-regular fa-heart text-2xl heartBeat"></i>
+            </div>
+            <div class="mt-2">
+                <h1 class="text-xl font-bold" id="fsn">Fire Service Number</h1>
+                <p class="text-lg text-gray-500">Fire Service</p>
+            </div>
+            <div class="mt-4">
+                <h1 class="font-bold text-3xl"id="fsnN">999</h1>
+                <p class="text-center border border-transparent w-[53px] h-[37px] bg-gray-100 rounded-[16px] p-1 mt-1 mb-2  text-gray-500">Fire</p>
+            </div>
+            <div class="flex justify-between gap-5">
+                <button onclick="myFunction('fsnN','copySpan')" class="btn border-2 border-gray-200 bg-gray-50 w-[150px] text-gray-600 rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="btn bg-green-500 w-[150px] text-white rounded-xl"id="fsnBtn"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+
+
+  <div class="border-1 border-transparent border-gray-500 rounded-xl shadow-lg p-4 row-span-2">
+    <div class="flex justify-between items-center">
+        <h1 class="font-bold text-xl"><i class="fa-regular fa-clock mr-2"></i>Call history</h1>
+        <button class="btn rounded-full text-white bg-[#00A63E]" id="clearHistory">Clear</button>
+</div>
+
+    
+<div>
+
+        <div id="callHistory">
+       
+    </div>
+
+ </div>
+
+
+
+
+
+
+
+   </div>
+        <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg mt-2  p-5">
+            <div class="flex justify-between items-center">
+                <img src="./assets/ambulance.png" class="border border-transparent w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
+                <i class="fa-regular fa-heart text-2xl heartBeat"></i>
+            </div>
+            <div class="mt-2">
+                <h1 class="text-xl font-bold" id="as">Ambulence Service</h1>
+                <p class="text-lg text-gray-500">Ambulence</p>
+            </div>
+            <div class="mt-4">
+                <h1 class="font-bold text-2xl"id="asN">1994-999999</h1>
+                <p class="text-center border border-transparent w-[53px] h-[37px] bg-gray-100 rounded-[16px] p-1 mt-1 mb-2 text-gray-500">Health</p>
+            </div>
+            <div class="flex justify-between gap-5">
+                <button onclick="myFunction('asN','copySpan')" class="btn border-2 border-gray-200 bg-gray-50 w-[150px] text-gray-600 rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="btn bg-green-500 w-[150px] text-white rounded-xl"id="asBtn"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+        <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg mt-2 p-5">
+            <div class="flex justify-between items-center">
+                <img src="./assets/emergency.png" class="border border-transparent w-[60px] h-[60px] bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
+                <i class="fa-regular fa-heart text-2xl heartBeat"></i>
+            </div>
+            <div class="mt-2">
+                <h1 class="text-xl font-bold" id="wch">Women & Child Helpline</h1>
+                <p class="text-lg text-gray-500">Women & Child Helpline</p>
+            </div>
+            <div class="mt-4">
+                <h1 class="font-bold text-2xl" id="wchN">109</h1>
+                <p class="text-center border border-transparent w-[53px] h-[37px] bg-gray-100 rounded-[16px] p-1 mt-1 mb-2">Help</p>
+            </div>
+            <div class="flex justify-between gap-5">
+                <button onclick="myFunction('wchN','copySpan')" class="btn border-2 border-gray-200 bg-gray-50 w-[150px] text-gray-600 rounded-xl"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="btn bg-green-500 w-[150px] text-white rounded-xl" id="wchBtn"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+        <div class="border-1 border-transparent border-gray-500 w-[360px] rounded-lg shadow-lg mt-2 p-5">
+            <div class="flex justify-between items-center">
+                <img src="./assets/emergency.png" class="border border-transparent w-[60px] h-[60px]
+                 bg-[#FFE3E2] rounded-[16px] w-[32px] h-[32px] p-3">
+                <i class="fa-regular fa-heart text-2xl heartBeat"></i>
+            </div>
+            <div class="mt-2">
+                <h1 class="text-xl font-bold" id="ach">Anti-Corruption Helpline</h1>
+                <p class="text-lg text-gray-500">Anti-Corruption </p>
+            </div>
+            <div class="mt-4">
+                <h1 class="font-bold text-3xl" id="achN">106</h1>
+                <p class="text-center border border-transparent w-[53px] h-[37px] bg-gray-100 rounded-[16px] p-1 mt-1 mb-2 text-gray-500">Govt.</p>
+            </div>
+            <div class="flex justify-between gap-5">
+                <button onclick="myFunction('achN','copySpan')" class="btn border-2 border-gray-200 bg-gray-50 w-[150px] text-gray-600 rounded-xl" ><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="btn bg-green-500 w-[150px] text-white rounded-xl" id="achBtn"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+         
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
